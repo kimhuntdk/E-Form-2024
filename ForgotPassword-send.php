@@ -99,8 +99,8 @@ if ($mysqli->affected_rows) {
         หากท่านต้องการเปลี่ยนรหัสผ่าน Click <a href="http://localhost/electronic/reset-password.php?token=$token">here</a>
         เพื่อเปลี่ยนรหัสผ่านของคุณ
         END;
-            // $mail->AddAddress($Address); //อีเมล์และชื่อผู้รับ
-            $mail->AddAddress('62011212115@msu.ac.th'); //อีเมล์และชื่อผู้รับ
+            $mail->AddAddress($Address); //อีเมล์และชื่อผู้รับ
+            // $mail->AddAddress('62011212115@msu.ac.th'); //อีเมล์และชื่อผู้รับ
             try {
                 $mail->send();
             } catch (Exception $e) {
